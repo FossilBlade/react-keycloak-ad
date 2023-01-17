@@ -1,7 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
-function App({first, last}) {
+function App({ first, last, logout }) {
   return (
     <div className="App">
       <header className="App-header">
@@ -9,7 +9,9 @@ function App({first, last}) {
         <p>
           Logged in as {first} {last}
         </p>
-        
+        <button onClick={logout} style={{ fontSize: "20px" }}>
+          Logout
+        </button>
       </header>
     </div>
   );
